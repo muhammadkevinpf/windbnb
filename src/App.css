@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Mulish&family=Poppins:wght@700&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-mulish {
+  font-family: "Mulish", serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.font-montserrat {
+  font-family: "Montserrat", serif;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.search-container {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+}
+
+.border-right {
+  border-right: 1px solid #f2f2f2;
+}
+
+.border-gray {
+  border: 1px solid #4f4f4f;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.location-rounded {
+  border-radius: 16px 16px 0 0;
+}
+
+.guest-rounded {
+  border-radius: 0 0 16px 16px;
+}
+
+.search-rounded {
+  border-radius: 0 16px 16px 0;
+}
+
+.text-main {
+  color: #333333;
+}
+
+.text-secondary {
+  color: #828282;
+}
+
+.overlay {
+  background: rgba(79, 79, 79, 0.4);
+}
+
+.guests-input:disabled {
+  background: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .location-rounded {
+    border-radius: 16px 0 0 16px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  
+  .guest-rounded {
+    border-radius: 0;
   }
 }
